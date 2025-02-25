@@ -4,21 +4,35 @@
 
 | ID   |                                 Requisito                                 | Prioridade | Requisitos Relacionados |
 | :--: | :-----------------------------------------------------------------------: | :--------: | :---------: |
-| RF01 |            O usuário pode criar um cadastro.              |  Média     |    -     |
-| RF02 |            O usuário consulta as informações e notícias do site.           |  Alta      |    RF04     |
-| RF03 |            O usuário altera informações do cadastro caso necessário .              |  Média     |     RF01      |
-| RF04 |            O usuário acessa links para acessar outras páginas.                 |   Alta       |      -       |
-| RF05 |            Os administradores inserem notícias no site.        |   Alta         |      -       |
-| RF06 |       O usuário consulta uma notícia filtrando por categorias (acadêmico, cultural)    |    Média        |    RF02         |
-| RF07 |              O usuário pode excluir um cadastro.           |     Média  |     RF01   |
-| RF08 |           O sistema deve garantir a segurança dos dados do usuário, incluindo criptografia da senha.             |    Média   |     -      |
-| RF9 |        Os administradores alteram/editam notícias no site.                |    Alta    |     RF05       |
-| RF10 |        Os administradores deletam notícias no site.       |      Alta      |      RF05        |
-| RF11 | O sistema deve permitir que o usuário recupere a senha através de um link enviado para o e-mail cadastrado. | Média | - |
-| RF12 | O sistema deve permitir que o usuário faça logout de sua conta de maneira simples, removendo suas credenciais da sessão. | Média | RF13 |
-| RF13 | O sistema deve permitir o usuário fazer login, apenas com seu id e senha. | Média | RF12 |
-| RF14 | O sistema deve permitir que o usuário faça comentários nas publicações. | Baixa | -|
-| RF15 | O sistema deve permitir que o administrador exclua comentários. | Baixa | RF14 |
+| RF01 | O sistema deve permitir o cadastro de produtos com nome, código de barras, SKU, descrição e imagens. |  Alta  | RF02, RF06  |
+
+| RF02 | O usuário pode definir categorias e variantes para produtos (ex: cor, tamanho, peso).|  Média  | RF01   |
+
+| RF03 | O sistema deve registrar todas as entradas e saídas de produtos no estoque.  | Alta | RF04, RF07, RF08 |
+
+| RF04 | O sistema deve permitir a transferência de produtos entre armazéns ou locais de estoque.  |  Alta  |  RF03, RF11 |
+
+| RF05 | O sistema deve permitir o rastreamento de produtos por lote e número de série.  | Alta  | RF03, RF09 |
+
+| RF06 | O usuário pode definir níveis mínimos e máximos de estoque e receber alertas de reabastecimento. | Média | RF01, RF07 |
+
+| RF07 | O sistema deve atualizar o estoque automaticamente com o recebimento de pedidos de compra. | Alta  |  RF03, RF06, RF08  |
+
+| RF08 | O sistema deve reduzir a quantidade em estoque automaticamente quando um pedido de venda é confirmado.  |  Alta  | RF03, RF07  |
+
+| RF9  | O sistema deve permitir o monitoramento da data de validade de produtos perecíveis. |  Média  | RF05   |
+
+| RF10 | O sistema deve registrar um histórico detalhado de todas as movimentações de estoque. | Alta | RF03, RF05, RF12  |
+
+| RF11 | O sistema deve permitir o gerenciamento de múltiplos armazéns e depósitos. | Média | RF04 |
+
+| RF12 | O usuário pode gerar relatórios de movimentação, produtos em estoque e previsão de demanda. | Média | RF10 |
+
+| RF13 | O sistema deve permitir a leitura e impressão de códigos de barras para produtos. | Alta | - |
+
+| RF14 | O administrador pode definir permissões para diferentes perfis de usuários. | Alta | - |
+
+| RF15 | O sistema deve permitir a importação e exportação de dados de estoque em formatos como CSV e Excel. | Média | - |
 
 
 
