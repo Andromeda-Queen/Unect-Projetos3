@@ -15,7 +15,7 @@
 | RNF09 | O sistema deve ter disponibilidade mínima de 99,5%, garantindo funcionamento contínuo. | Produto/Confiabilidade | Alta | - |
 | RNF10 | O sistema deve fornecer uma interface amigável e responsiva, seguindo padrões de UX/UI modernos. | Produto/Usabilidade | Média | - |
 | RNF11 | O sistema deve registrar logs detalhados de todas as ações críticas dos usuários, permitindo auditoria. | Produto/Segurança |  Alta | - |
-| RNF11 | O sistema deve ser escalável para suportar múltiplas empresas e filiais dentro da mesma instalação. | Organizacional/Implementação |  Alta | - |
+| RNF12 | O sistema deve ser escalável para suportar múltiplas empresas e filiais dentro da mesma instalação. | Organizacional/Implementação |  Alta | - |
 
 
 <div style="text-align: center">
